@@ -1,0 +1,25 @@
+=pod
+
+=head2 Gentoo Overlay for Rex
+
+To use this overlay open the file /var/lib/layman/cache_*.xml and add the following snippet.
+
+  <repo priority="50" quality="experimental" status="unofficial">
+    <name>rex</name>
+    <description>overlay for using rex on gentoo</description>
+    <homepage>http://rexify.org/</homepage>
+    <owner>
+      <email>jan.gehring@gmail.com</email>
+      <name>Jan Gehring</name>
+    </owner>
+    <source type="git">git://github.com/krimdomu/gentoo-overlay.git</source>
+  </repo>
+
+And execute
+
+ layman -a rex
+
+After that you can just install rex via
+
+ emerge app-admin/rex
+
