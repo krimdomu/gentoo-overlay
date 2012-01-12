@@ -6,7 +6,7 @@ EAPI=4
 
 MODULE_AUTHOR=JFRIED
 MODULE_VERSION=0.21.1
-SRC_URI="http://search.cpan.org/CPAN/authors/id/J/JF/JFRIED/Rex-0.21.1.tar.gz"
+MY_P="Rex-${MODULE_VERSION}"
 inherit perl-module
 
 DESCRIPTION="(R)?ex is a small script to ease the execution of remote commands."
@@ -19,3 +19,5 @@ RDEPEND="dev-perl/Net-SSH2"
 DEPEND="${RDEPEND}"
 
 SRC_TEST="do"
+
+
